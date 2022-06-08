@@ -15,14 +15,20 @@ function scr_use_weapon(){
 			}
 			break;
 		case 2: //lightning
-		
+			if(mouse_check_button(mb_left) && cur_lightning_ammo > 0 && lightning_cooldown <= 0){
+				lightning_cooldown = 40;
+				cur_lightning_ammo--;
+				instance_create_layer(x,y,"Instances",oBolt);
+				audio_play_sound(sndLightning,0,0);
+				oCamera.current_shake = 1.5;
+			}
 			break;
 		case 3: //fireball
 			if(mouse_check_button(mb_left) && cur_fire_ammo > 0 && fire_cooldown <= 0){
 				fire_cooldown = 60;
 				cur_fire_ammo--;
 				instance_create_layer(x,y,"Instances",oBomb);
-				audio_play_sound(sLaser,0,0);
+				audio_play_sound(sFireCast,0,0);
 				oCamera.current_shake = 2;
 			}
 			break;
