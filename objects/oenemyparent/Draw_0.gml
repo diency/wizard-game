@@ -10,5 +10,5 @@ if(alarm[1] > 0){
 	var randy = 0;
 }
 
-draw_sprite(sprite_index,-1,x+randx,y+randy);
+draw_sprite_ext(sprite_index,-1,x+randx,y+randy,image_xscale,image_yscale,0,-1,1);
 gpu_set_fog(false,c_white,0,0);
