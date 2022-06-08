@@ -18,7 +18,13 @@ function scr_use_weapon(){
 		
 			break;
 		case 3: //fireball
-		
+			if(mouse_check_button(mb_left) && cur_fire_ammo > 0 && fire_cooldown <= 0){
+				fire_cooldown = 60;
+				cur_fire_ammo--;
+				instance_create_layer(x,y,"Instances",oBomb);
+				audio_play_sound(sLaser,0,0);
+				oCamera.current_shake = 2;
+			}
 			break;
 	}
 }
