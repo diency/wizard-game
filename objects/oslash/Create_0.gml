@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var spd = 15;
+var spd = 20;
 
 var go_to_x = mouse_x;
 var go_to_y = mouse_y;
@@ -11,8 +11,8 @@ var deltaY = go_to_y - y;
 var hyp = sqrt((deltaX * deltaX) + (deltaY * deltaY));
 	
 if(oPlayer.state == pState.normal){
-	oPlayer.vSpeed += -(deltaY/hyp) * 3;
-	oPlayer.hSpeed += -(deltaX/hyp) * 3;
+	oPlayer.vSpeed += -(deltaY/hyp) * -3;
+	oPlayer.hSpeed += -(deltaX/hyp) * -3;
 }
 	
 move_x = deltaX/hyp * spd;

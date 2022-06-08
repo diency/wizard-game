@@ -4,7 +4,7 @@ function scr_use_weapon(){
 	switch(current_weapon){
 		case 0: // melee
 			if(mouse_check_button(mb_left) && melee_cooldown <= 0){
-				melee_cooldown = 30;
+				melee_cooldown = 60;
 				instance_create_layer(x,y,"Instances",oSlash);
 				audio_sound_pitch(audio_play_sound(sndSwish,0,0),random_range(0.9,1.2));
 				oCamera.current_shake = 1;

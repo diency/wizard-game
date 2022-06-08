@@ -1,19 +1,18 @@
 {
-  "name": "oWall1",
   "spriteId": {
     "name": "sWall",
     "path": "sprites/sWall/sWall.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "obj_grappleables_parent",
     "path": "objects/obj_grappleables_parent/obj_grappleables_parent.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -33,6 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
+  "name": "oWall1",
   "tags": [],
   "resourceType": "GMObject",
 }
