@@ -6,7 +6,7 @@ var scale = global.fire_aoe;
 image_xscale = scale;
 image_yscale = scale;
 
-//play explosion noise
+audio_play_sound(sndExplosion,0,0);
 
 alarm[0] = 30;
 
