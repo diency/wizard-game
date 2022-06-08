@@ -11,8 +11,8 @@ var deltaY = go_to_y - y;
 var hyp = sqrt((deltaX * deltaX) + (deltaY * deltaY));
 	
 if(oPlayer.state == pState.normal){
-	oPlayer.vSpeed += -(deltaY/hyp) * -3;
-	oPlayer.hSpeed += -(deltaX/hyp) * -3;
+	oPlayer.vSpeed += -(deltaY/hyp) * -5;
+	oPlayer.hSpeed += -(deltaX/hyp) * -5;
 }
 	
 move_x = deltaX/hyp * spd;
