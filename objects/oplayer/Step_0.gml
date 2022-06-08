@@ -16,7 +16,7 @@ if(coyote_frames > 0){
 //get inputs
 var _keyLeft = keyboard_check(ord("A"));
 var _keyRight = keyboard_check(ord("D"));
-var _keyJump = keyboard_check_pressed(ord("W"));
+var _keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
 
 //weapon swap controls
 if(keyboard_check_pressed(ord("1"))){
@@ -32,7 +32,7 @@ if(keyboard_check_pressed(ord("1"))){
 	current_weapon = 3;
 	audio_play_sound(sndEquip,0,0);
 }
-
+//mousewheel weapon switching
 if(mouse_wheel_down()){
 	current_weapon++;
 	audio_play_sound(sndEquip,0,0);
@@ -41,7 +41,7 @@ if(mouse_wheel_up()){
 	current_weapon--;
 	audio_play_sound(sndEquip,0,0);
 }
-
+//weapon switching sanity check
 if(current_weapon < 0){
 	current_weapon = 3;	
 }else if(current_weapon > 3){

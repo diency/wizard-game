@@ -11,7 +11,7 @@ global.bubble_rof = 20;
 global.lightning_ammo = 3;
 global.lightning_dmg = 8;
 global.fire_ammo = 3;
-global.fire_aoe = 5;
+global.fire_aoe = 4;
 
 
 window_set_size(global.game_width,global.game_height);
