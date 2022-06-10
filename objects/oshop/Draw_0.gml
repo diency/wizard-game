@@ -15,7 +15,11 @@ if(in_menu){
 	draw_set_valign(fa_middle);
 	draw_text(x + 30,y+10,"your cash: " + string(global.available_cash));
 	if(current_selected != num_upgrades){
-		draw_text(x + 30,y+30,"cost: " + string(upgrade_cost * (tiers[| current_selected] + 1)));
+		if(tiers[| current_selected] < max_upgrade){
+			draw_text(x + 30,y+30,"cost: " + string(upgrade_cost * (tiers[| current_selected] + 1)));
+		}else{
+			draw_text(x + 30,y+30,"cost: MAXED OUT!");
+		}
 	}
 	draw_text(x + 30,y+50,"upgrades are applied on start of new level");
 }
