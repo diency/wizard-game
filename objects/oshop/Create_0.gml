@@ -14,7 +14,7 @@ num_upgrades = 6;
 dontspam = true;
 
 upgrade_cost = global.upgrade_cost;
-max_upgrade = 3;
+max_upgrade = 4;
 
 //the amount which purchasing an upgrade gives to each category
 //basically just formatted like this so its easy to change later if we fuck up balance :)
