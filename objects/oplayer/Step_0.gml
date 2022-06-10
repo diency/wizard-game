@@ -229,7 +229,8 @@ if(combo_timer > 0){
 	point_pool = 0;
 	//play combo end noise
 }
-
-if(!audio_is_playing(current_song) && song_started && redeemed_points > 0){
-	redeemed_points = Approach(redeemed_points,0,1);
+if(instance_exists(oCreature)){
+	if(!oCreature.collided && !audio_is_playing(current_song) && song_started && redeemed_points > 0){
+		redeemed_points = Approach(redeemed_points,0,1);
+	}
 }
