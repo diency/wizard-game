@@ -13,6 +13,12 @@ global.lightning_dmg = 8;
 global.fire_ammo = 1;
 global.fire_aoe = 4;
 
+global.lv1_hs = 0;
+global.lv2_hs = 0;
+global.lv3_hs = 0;
+global.lv4_hs = 0;
+global.lv5_hs = 0;
+
 global.available_cash = 6000;
 global.net_worth = 6000;
 
