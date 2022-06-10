@@ -10,6 +10,15 @@ bruh.sprite_index = sDefeated;
 if(object_index == oEnemyJim){
 	bruh.sprite_index = sDefeatedJim;	
 }
+with(bruh){
+	if(collision_line(x,y,x,y+500,obj_wall_parent,false,false)){
+		while(!place_meeting(x,y+1,obj_wall_parent)){
+			y+= 1;	
+		}
+	}else{
+		instance_destroy();	
+	}
+}
 audio_play_sound(sGlassBreak,0,0);
 
 repeat(worth/20){

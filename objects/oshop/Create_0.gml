@@ -13,7 +13,7 @@ num_upgrades = 6;
 
 dontspam = true;
 
-upgrade_cost = 3000;
+upgrade_cost = global.upgrade_cost;
 max_upgrade = 3;
 
 //the amount which purchasing an upgrade gives to each category

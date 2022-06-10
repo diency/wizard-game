@@ -13,8 +13,16 @@ global.lightning_dmg = 8;
 global.fire_ammo = 1;
 global.fire_aoe = 4;
 
-global.available_cash = 6000;
-global.net_worth = 6000;
+global.lv1_hs = 0;
+global.lv2_hs = 0;
+global.lv3_hs = 0;
+global.lv4_hs = 0;
+global.lv5_hs = 0;
+
+global.upgrade_cost = 4500;
+
+global.available_cash = global.upgrade_cost*2;
+global.net_worth = global.upgrade_cost*2;
 
 
 window_set_size(global.game_width,global.game_height);

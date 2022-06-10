@@ -16,7 +16,7 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !action_time && !in_menu){
 				billy.text = "1 - the dungeon"; //dungeon level
 				break;
 			case 1:
-				billy.text = "2 - caleb level"; //floating islands
+				billy.text = "2 - squire"; //floating islands
 				break;
 			case 2:
 				billy.text = "3 - a new quest"; //temple/annoying ceiling level
@@ -25,7 +25,7 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !action_time && !in_menu){
 				billy.text = "4 - troll's tower"; //tower level
 				break;
 			case 4:
-				billy.text = "5 - final level"; //ridiculous combat dungeon
+				billy.text = "5 - psycho x's catsle"; //ridiculous combat dungeon
 				break;
 		}
 	}
