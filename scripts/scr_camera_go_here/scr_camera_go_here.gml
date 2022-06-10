@@ -3,11 +3,11 @@
 function scr_camera_go_here(goToX,goToY,numFrames){
 	with(oCamera){
 		
-		start_x = x;
-		start_y = y;
+		start_x = goToX;
+		start_y = goToY;
 		
-		end_x = goToX;
-		end_y = goToY;
+		end_x = x;
+		end_y = y; //im fucking stupid lol
 		
 		goHere_cur_frame = numFrames;
 		goHere_total_frames = numFrames;
