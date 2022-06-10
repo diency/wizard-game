@@ -1,16 +1,15 @@
 {
-  "name": "obj_non_grappleable_parent",
   "spriteId": null,
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "obj_wall_parent",
     "path": "objects/obj_wall_parent/obj_wall_parent.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -30,6 +29,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
+  "name": "obj_non_grappleable_parent",
   "tags": [],
   "resourceType": "GMObject",
 }
