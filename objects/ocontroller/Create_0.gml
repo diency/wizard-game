@@ -4,3 +4,8 @@
 //particle effects stuff
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem,-100);
+
+paused = false;
+
+action_time = false;
+current_selected = 0;

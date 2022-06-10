@@ -7,8 +7,11 @@ oPlayer.current_combo++;
 
 var bruh = instance_create_layer(x,y,"Instances",oBlank);
 bruh.sprite_index = sDefeated;
+if(object_index == oEnemyJim){
+	bruh.sprite_index = sDefeatedJim;	
+}
 audio_play_sound(sGlassBreak,0,0);
 
-repeat(8){
+repeat(worth/20){
 	instance_create_layer(x,y,"Instances",oCrystal);
 }

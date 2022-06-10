@@ -22,6 +22,11 @@ vSpeedFraction = 0.0;
 spawnx = x;
 spawny = y;
 
+current_song = 0;
+song_started = false;
+song_length = 0;
+song_percent = 0;
+
 enum pState 
 {
 	normal,
