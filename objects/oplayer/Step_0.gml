@@ -18,6 +18,8 @@ var _keyLeft = keyboard_check(ord("A"));
 var _keyRight = keyboard_check(ord("D"));
 var _keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
 
+var _keyDown = keyboard_check_pressed(ord("S"));
+
 //weapon swap controls
 if(keyboard_check_pressed(ord("1"))){
 	current_weapon = 0;
@@ -88,6 +90,10 @@ switch(state){
 			vSpeed -= jumpSpd;
 			audio_sound_pitch(audio_play_sound(sndJump,0,0),1.2);
 			part_particles_create(global.partSystem,x,y,global.ptBasic,6);
+		}
+		
+		if(_keyDown && vSpeed < jumpSpd){
+			vSpeed = jumpSpd;
 		}
 		
 		if(mouse_check_button_pressed(mb_right)){
