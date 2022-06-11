@@ -118,6 +118,7 @@
     {"id":{"name":"sMrW2","path":"sprites/sMrW2/sMrW2.yy",},"order":43,},
     {"id":{"name":"oEnemy4","path":"objects/oEnemy4/oEnemy4.yy",},"order":35,},
     {"id":{"name":"sDeath","path":"sprites/sDeath/sDeath.yy",},"order":6,},
+    {"id":{"name":"sTutorial9","path":"sprites/sTutorial9/sTutorial9.yy",},"order":44,},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},"order":21,},
     {"id":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"order":3,},
     {"id":{"name":"sndCoins","path":"sounds/sndCoins/sndCoins.yy",},"order":16,},
