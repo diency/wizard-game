@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var spd = 15;
+var spd = 18;
 
 var go_to_x = mouse_x;
 var go_to_y = mouse_y;
