@@ -7,7 +7,7 @@ global.game_width = 768;
 global.game_height = 576;
 
 global.bubble_ammo = 30;
-global.bubble_rof = 20;
+global.bubble_rof = 15;
 global.lightning_ammo = 1;
 global.lightning_dmg = 8;
 global.fire_ammo = 1;
