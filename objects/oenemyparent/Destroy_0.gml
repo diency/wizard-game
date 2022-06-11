@@ -19,6 +19,14 @@ with(bruh){
 		instance_destroy();	
 	}
 }
+
+if(object_index == oEnemyMrW){
+	var bruh = instance_create_layer(x + 10,y +32,"Instances",oBlank);
+	bruh.sprite_index = sDefeated;
+	var bruh = instance_create_layer(x - 10,y+32,"Instances",oBlank);
+bruh.sprite_index = sDefeated;
+}
+
 audio_play_sound(sGlassBreak,0,0);
 
 repeat(worth/20){

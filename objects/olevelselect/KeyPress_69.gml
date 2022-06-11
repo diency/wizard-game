@@ -25,7 +25,7 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !action_time && !in_menu){
 				billy.text = "4 - troll's tower"; //tower level
 				break;
 			case 4:
-				billy.text = "5 - psycho x's catsle"; //ridiculous combat dungeon
+				billy.text = "5 - it's real"; //ridiculous combat dungeon
 				break;
 		}
 	}

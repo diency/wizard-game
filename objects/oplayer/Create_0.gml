@@ -4,6 +4,9 @@ if(!instance_exists(oController)){
 	instance_create_layer(0,0,"Instances",oController);	
 }
 
+point_loss_frames = 2;
+point_loss_cur = 0;
+
 coyote_frames = 9;
 
 can_double_jump = true;

@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndlevel5.mp3",
-  "duration": 176.952,
+  "duration": 110.26283,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
