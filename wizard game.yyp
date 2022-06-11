@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"rmLevel5","path":"rooms/rmLevel5/rmLevel5.yy",},"order":6,},
     {"id":{"name":"oShop","path":"objects/oShop/oShop.yy",},"order":27,},
+    {"id":{"name":"sDungeonBackgroundFull","path":"sprites/sDungeonBackgroundFull/sDungeonBackgroundFull.yy",},"order":44,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":33,},
     {"id":{"name":"sEnemyJim","path":"sprites/sEnemyJim/sEnemyJim.yy",},"order":19,},
     {"id":{"name":"oCarIntro","path":"objects/oCarIntro/oCarIntro.yy",},"order":8,},
@@ -39,6 +40,7 @@
     {"id":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},"order":4,},
     {"id":{"name":"sWelcome","path":"sprites/sWelcome/sWelcome.yy",},"order":28,},
     {"id":{"name":"sndBoomp","path":"sounds/sndBoomp/sndBoomp.yy",},"order":3,},
+    {"id":{"name":"sDungeonBackground1","path":"sprites/sDungeonBackground1/sDungeonBackground1.yy",},"order":42,},
     {"id":{"name":"sPlayerBolt","path":"sprites/sPlayerBolt/sPlayerBolt.yy",},"order":13,},
     {"id":{"name":"oEnemy3","path":"objects/oEnemy3/oEnemy3.yy",},"order":23,},
     {"id":{"name":"sndExplosion","path":"sounds/sndExplosion/sndExplosion.yy",},"order":8,},
@@ -46,6 +48,7 @@
     {"id":{"name":"oBar","path":"objects/oBar/oBar.yy",},"order":28,},
     {"id":{"name":"sEnemy1","path":"sprites/sEnemy1/sEnemy1.yy",},"order":10,},
     {"id":{"name":"sWall2","path":"sprites/sWall2/sWall2.yy",},"order":2,},
+    {"id":{"name":"sDungeonBackground2","path":"sprites/sDungeonBackground2/sDungeonBackground2.yy",},"order":43,},
     {"id":{"name":"sEnemy4","path":"sprites/sEnemy4/sEnemy4.yy",},"order":41,},
     {"id":{"name":"sWeapons","path":"sprites/sWeapons/sWeapons.yy",},"order":9,},
     {"id":{"name":"sCreature","path":"sprites/sCreature/sCreature.yy",},"order":29,},
@@ -167,7 +170,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.5.0.8",
+    "IDEVersion": "2022.5.1.14",
   },
   "resourceVersion": "1.5",
   "name": "wizard game",
