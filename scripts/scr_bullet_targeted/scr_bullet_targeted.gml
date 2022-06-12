@@ -7,4 +7,6 @@ function scr_bullet_targeted(objectType,initX,initY,targetX,targetY,bulSpd){
 	
 	billybob.moveX = lengthdir_x(bulSpd,angle);
 	billybob.moveY = lengthdir_y(bulSpd,angle);
+	
+	billybob.image_angle = angle;
 }
