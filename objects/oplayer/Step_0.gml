@@ -14,11 +14,17 @@ if(coyote_frames > 0){
 }
 
 //get inputs
-var _keyLeft = keyboard_check(ord("A"));
-var _keyRight = keyboard_check(ord("D"));
-var _keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
-
-var _keyDown = keyboard_check_pressed(ord("S"));
+if(alarm[0] <= 0){
+	var _keyLeft = keyboard_check(ord("A"));
+	var _keyRight = keyboard_check(ord("D"));
+	var _keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
+	var _keyDown = keyboard_check_pressed(ord("S"));
+}else{
+	var _keyLeft = 0;
+	var _keyRight = 0;
+	var _keyJump = 0;
+	var _keyDown = 0;
+}
 
 //weapon swap controls
 if(keyboard_check_pressed(ord("1"))){
