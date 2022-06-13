@@ -57,7 +57,7 @@ if(in_menu){
 						global.fire_ammo -= upgrade_fire_ammo;
 						break;
 					case 5:
-						global.fire_aoe -= upgrade_fire_ammo;
+						global.fire_aoe -= upgrade_fire_aoe;
 						break;
 				}
 				with(oBar){
@@ -98,7 +98,7 @@ if(in_menu){
 						global.fire_ammo += upgrade_fire_ammo;
 						break;
 					case 5:
-						global.fire_aoe += upgrade_fire_ammo;
+						global.fire_aoe += upgrade_fire_aoe;
 						break;
 				}
 				with(oBar){

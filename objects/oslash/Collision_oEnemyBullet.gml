@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(other);
+if(other.object_index != oEnemySlash){
+	instance_destroy(other);
+}

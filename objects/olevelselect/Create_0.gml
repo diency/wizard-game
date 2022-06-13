@@ -10,3 +10,5 @@ depth = -2;
 num_levels = 5;
 
 dontspam = true;
+
+the_end = false;

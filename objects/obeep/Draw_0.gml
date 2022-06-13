@@ -3,7 +3,7 @@
 
 draw_self();
 
-if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70){
+if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !oVendingMachine.part_bought){
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
