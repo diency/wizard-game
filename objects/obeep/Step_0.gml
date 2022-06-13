@@ -10,7 +10,7 @@ if(oVendingMachine.part_bought){
 	x += lengthdir_x(8,angle);
 	y += lengthdir_y(8,angle);
 	
-	if(point_distance(x,y,oLevelSelect.x,oLevelSelect.y) < 16){
-		instance_destroy();	
+	if(point_distance(x,y,oLevelSelect.x,oLevelSelect.y + 32) < 16){
+		instance_destroy();
 	}
 }
