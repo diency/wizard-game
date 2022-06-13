@@ -13,6 +13,9 @@ if(object_index == oEnemyJim){
 if(object_index == oEnemyCat){
 	bruh.sprite_index = sDefeatedCat;
 }
+if(object_index == oEnemyPsychoX){
+	bruh.sprite_index = sDefeatedPX;
+}
 with(bruh){
 	if(collision_line(x,y,x,y+500,obj_wall_parent,false,false)){
 		while(!place_meeting(x,y+1,obj_wall_parent)){
