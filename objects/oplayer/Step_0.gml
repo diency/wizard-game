@@ -116,6 +116,10 @@ switch(state){
 				
 				state = pState.grappling;
 				audio_play_sound(sndBoomp,0,0);
+			}else if(collision_line(x,y,return_arr[1],return_arr[2],obj_non_grappleable_parent,false,false)){
+				//tell player they cant grapple onto this
+				alarm[1] = 40;
+				audio_play_sound(sndDink,0,0);
 			}
 		}
 		
@@ -248,6 +252,8 @@ if(instance_exists(oCreature)){
 			redeemed_points = Approach(redeemed_points,0,1);
 		}
 		point_loss_cur--;
-		
+		if(!audio_is_playing(sndOutOfTime)){
+			audio_play_sound(sndOutOfTime,0,1);	
+		}
 	}
 }

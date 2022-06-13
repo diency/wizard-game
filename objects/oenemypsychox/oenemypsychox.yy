@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPsychoX",
-    "path": "sprites/sPsychoX/sPsychoX.yy",
+    "name": "sPsychoX2",
+    "path": "sprites/sPsychoX2/sPsychoX2.yy",
   },
   "solid": false,
   "visible": true,
