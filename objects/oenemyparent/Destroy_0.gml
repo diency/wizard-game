@@ -10,6 +10,9 @@ bruh.sprite_index = sDefeated;
 if(object_index == oEnemyJim){
 	bruh.sprite_index = sDefeatedJim;	
 }
+if(object_index == oEnemyCat){
+	bruh.sprite_index = sDefeatedCat;
+}
 with(bruh){
 	if(collision_line(x,y,x,y+500,obj_wall_parent,false,false)){
 		while(!place_meeting(x,y+1,obj_wall_parent)){

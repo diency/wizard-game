@@ -23,7 +23,7 @@ upgrade_bubble_rof = -3;
 upgrade_lightning_ammo = 3;
 upgrade_lightning_dmg = 2;
 upgrade_fire_ammo = 2;
-upgrade_fire_aoe = 2;
+upgrade_fire_aoe = 1;
 
 //the current tier of each upgrade
 tier_bubble_ammo = (global.bubble_ammo - 30) div upgrade_bubble_ammo;

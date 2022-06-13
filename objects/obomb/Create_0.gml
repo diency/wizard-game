@@ -17,3 +17,6 @@ if(oPlayer.state == pState.normal){
 	
 move_x = deltaX/hyp * spd;
 move_y = deltaY/hyp * spd;
+
+x += move_x;
+y += move_y;

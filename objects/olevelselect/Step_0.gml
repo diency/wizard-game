@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if(the_end){
+	x += 8;
+	y -= 4;
+}
+
 if(action_time){
 	if(current_selected = num_levels){
 		//this is the back button

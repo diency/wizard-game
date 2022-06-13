@@ -6,4 +6,6 @@ function scr_bullet_angled(objectType,initX,initY,angle,bulSpd){
 	
 	billybob.moveX = lengthdir_x(bulSpd,angle);
 	billybob.moveY = lengthdir_y(bulSpd,angle);
+	
+	billybob.image_angle = angle;
 }

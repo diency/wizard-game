@@ -39,11 +39,13 @@ if(keyboard_check_pressed(vk_escape)){
 			}
 			
 			layer_set_visible("Assets_1",false);
+			layer_set_visible("Assets_1_1",false);
 			paused = true;
 			audio_pause_all();
 		}
 	}else{
 		layer_set_visible("Assets_1",true);
+		layer_set_visible("Assets_1_1",true);
 		instance_destroy(oButton);
 		paused = false;
 		instance_activate_all();

@@ -1,6 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(oVendingMachine.part_bought){
+	
+	oPlayer.state = pState.frozen;
+	oPlayer.visible = false;
+	the_end = true;
+	oCamera.state = cState.frozen;
+	alarm[1] = 120;
+	audio_stop_all();
+	audio_play_sound(sndRevving,0,0);
+	
+}else{
+
 if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !action_time && !in_menu){
 	oPlayer.state = pState.noControls;
 	in_menu = true;
@@ -37,4 +49,6 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !action_time && !in_menu){
 	bob.text = "back";
 }else if(!action_time && in_menu){
 	action_time = true;	
+}
+
 }
