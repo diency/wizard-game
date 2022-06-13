@@ -215,11 +215,14 @@ if(y > room_height + 50){
 }
 
 //set checkpoint spawn
-var bruh = instance_place(x,y+1,oCheckpoint)
+var bruh = instance_place(x+1,y+1,oCheckpoint);
+if(bruh == noone){
+	bruh = instance_place(x-1,y-1,oCheckpoint);
+}
 if(bruh != noone){
 	part_particles_create(global.partSystem,x,y,global.ptCheckpoint,1);
-	spawnx = bruh.x; //so that you dont spawn on the edge of the block
-	spawny = y; //so that you spawn at the correct height
+	spawnx = bruh.x;
+	spawny = bruh.y-32-14;
 }
 
 //gun cooldown vars
