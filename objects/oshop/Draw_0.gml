@@ -6,7 +6,11 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !in_menu){
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
-	draw_text(x + 32,y - 10,"press E for shop");
+	if(!oVendingMachine.part_bought){
+		draw_text(x + 32,y - 10,"press E for shop");
+	}else{
+		draw_text(x + 32,y - 10,"sorry kiddo, got nothing left to sell ya");
+	}
 }
 
 if(in_menu){

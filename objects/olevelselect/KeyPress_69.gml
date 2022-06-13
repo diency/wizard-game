@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(oVendingMachine.part_bought){
+if(oVendingMachine.part_bought && point_distance(x,y,oPlayer.x,oPlayer.y) < 70){
 	
 	oPlayer.state = pState.frozen;
 	oPlayer.visible = false;

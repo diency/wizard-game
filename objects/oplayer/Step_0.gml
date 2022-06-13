@@ -239,6 +239,13 @@ if(fire_cooldown > 0){
 	fire_cooldown--;	
 }
 
+if(global.grungo){
+	melee_cooldown = 0;
+	bubble_cooldown = 0;
+	lightning_cooldown = 0;
+	fire_cooldown = 0;
+}
+
 //combo timer
 if(combo_timer > 0){
 	combo_timer--;	

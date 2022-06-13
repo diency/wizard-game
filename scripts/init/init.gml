@@ -24,6 +24,9 @@ global.upgrade_cost = 4500;
 global.available_cash = global.upgrade_cost*2;
 global.net_worth = global.upgrade_cost*2;
 
+global.cheating = false;
+global.grungo = false;
+
 
 window_set_size(global.game_width,global.game_height);
 surface_resize(application_surface, global.game_width, global.game_height);

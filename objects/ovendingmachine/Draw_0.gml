@@ -17,6 +17,7 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !part_bought){
 	
 	}else{
 		draw_text(x,y - 50,"PRESS E TO BUY ROBOT PART");
+		draw_text(x,y - 20,"(ends game)");
 	}
 	
 }
