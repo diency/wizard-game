@@ -256,12 +256,14 @@ if(combo_timer > 0){
 	//play combo end noise
 }
 if(instance_exists(oCreature)){
-	if(!oCreature.collided && !audio_is_playing(current_song) && song_started && redeemed_points > 0){
-		if(point_loss_cur == 0){
-			point_loss_cur = point_loss_frames;
-			redeemed_points = Approach(redeemed_points,0,1);
+	if(!oCreature.collided && !audio_is_playing(current_song) && song_started){
+		if(redeemed_points > 0){
+			if(point_loss_cur == 0){
+				point_loss_cur = point_loss_frames;
+				redeemed_points = Approach(redeemed_points,0,1);
+			}
+			point_loss_cur--;
 		}
-		point_loss_cur--;
 		if(!audio_is_playing(sndOutOfTime)){
 			audio_play_sound(sndOutOfTime,0,1);	
 		}
