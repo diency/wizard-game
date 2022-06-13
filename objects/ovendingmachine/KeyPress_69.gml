@@ -6,5 +6,6 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70){
 		part_bought = true;
 		audio_play_sound(sndChaching,0,0);
 		sprite_index = sVendingMachineBought;
+		global.available_cash -= oShop.upgrade_cost * 36;
 	}
 }

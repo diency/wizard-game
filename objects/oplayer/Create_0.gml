@@ -4,6 +4,10 @@ if(!instance_exists(oController)){
 	instance_create_layer(0,0,"Instances",oController);	
 }
 
+if(global.grungo){
+	sprite_index = sGrungo;	
+}
+
 point_loss_frames = 2;
 point_loss_cur = 0;
 

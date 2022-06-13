@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !in_menu){
+if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !in_menu && !oVendingMachine.part_bought){
 	oPlayer.state = pState.noControls;
 	in_menu = true;
 	
