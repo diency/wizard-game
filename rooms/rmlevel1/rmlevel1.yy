@@ -294,17 +294,17 @@
         {"spriteId":{"name":"sDungeonTorch","path":"sprites/sDungeonTorch/sDungeonTorch.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3072.0,"y":2520.0,"resourceVersion":"1.0","name":"graphic_594B296","tags":[],"resourceType":"GMRSpriteGraphic",},
         {"spriteId":{"name":"sDungeonTorch","path":"sprites/sDungeonTorch/sDungeonTorch.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3072.0,"y":2648.0,"resourceVersion":"1.0","name":"graphic_5818C19E","tags":[],"resourceType":"GMRSpriteGraphic",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Assets_1_1","tags":[],"resourceType":"GMRAssetLayer",},
-    {"depth":150,"visible":true,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_tintfilter","properties":[
+    {"visible":true,"depth":150,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_tintfilter","properties":[
         {"type":1,"name":"g_TintCol","value":"#FF4C4545",},
       ],"resourceVersion":"1.0","name":"Effect_3","tags":[],"resourceType":"GMREffectLayer",},
-    {"depth":200,"visible":true,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_distort","properties":[
+    {"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_distort","properties":[
         {"type":0,"name":"g_DistortScale","value":"7",},
         {"type":0,"name":"g_DistortAmount","value":"44",},
         {"type":0,"name":"g_DistortOffset","value":"0",},
         {"type":0,"name":"g_DistortOffset","value":"0",},
         {"type":2,"name":"g_DistortTexture","value":"_filter_distort_smoothnoise",},
       ],"resourceVersion":"1.0","name":"Effect_2","tags":[],"resourceType":"GMREffectLayer",},
-    {"depth":250,"visible":true,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_twirl_distort","properties":[
+    {"visible":true,"depth":250,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"_filter_twirl_distort","properties":[
         {"type":0,"name":"g_DistortAngle","value":"36",},
         {"type":0,"name":"g_DistortRadius","value":"2",},
         {"type":0,"name":"g_DistortOffset","value":"0",},
