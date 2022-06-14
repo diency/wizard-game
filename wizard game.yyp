@@ -42,6 +42,7 @@
     {"id":{"name":"oCrystal","path":"objects/oCrystal/oCrystal.yy",},"order":22,},
     {"id":{"name":"sCrystal2","path":"sprites/sCrystal2/sCrystal2.yy",},"order":60,},
     {"id":{"name":"sBeepMoving","path":"sprites/sBeepMoving/sBeepMoving.yy",},"order":54,},
+    {"id":{"name":"sprHealth","path":"sprites/sprHealth/sprHealth.yy",},"order":62,},
     {"id":{"name":"sndChaching","path":"sounds/sndChaching/sndChaching.yy",},"order":15,},
     {"id":{"name":"oBlank","path":"objects/oBlank/oBlank.yy",},"order":21,},
     {"id":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},"order":4,},

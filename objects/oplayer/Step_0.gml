@@ -14,6 +14,7 @@ if(coyote_frames > 0){
 }
 
 //get inputs
+/*
 if(alarm[0] <= 0){
 	var _keyLeft = keyboard_check(ord("A"));
 	var _keyRight = keyboard_check(ord("D"));
@@ -25,6 +26,12 @@ if(alarm[0] <= 0){
 	var _keyJump = 0;
 	var _keyDown = 0;
 }
+*/
+
+keyLeft = keyboard_check(ord("A"));
+keyRight = keyboard_check(ord("D"));
+keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
+keyDown = keyboard_check_pressed(ord("S"));
 
 //weapon swap controls
 if(keyboard_check_pressed(ord("1"))){
@@ -62,7 +69,7 @@ switch(state){
 	
 		scr_use_weapon();
 	
-		var dir = _keyRight - _keyLeft;
+		var dir = keyRight - keyLeft;
 		hSpeed += dir * walkAccel;
 		
 		var hFriction = hFrictionGround;
@@ -76,7 +83,7 @@ switch(state){
 		vSpeed += grv;
 		//hsp_extra = Approach(hsp_extra,0,hFriction);
 		
-		if(_keyJump && coyote_frames > 0){
+		if(keyJump && coyote_frames > 0){
 			coyote_frames = 0;
 			grounded = false;
 			vSpeedFraction = 0;
@@ -85,7 +92,7 @@ switch(state){
 			}
 			audio_play_sound(sndJump,0,0);
 			vSpeed -= jumpSpd;
-		}else if(_keyJump && can_double_jump){
+		}else if(keyJump && can_double_jump){
 			can_double_jump = false;
 			coyote_frames = 0;
 			grounded = false;
@@ -98,7 +105,7 @@ switch(state){
 			part_particles_create(global.partSystem,x,y,global.ptBasic,6);
 		}
 		
-		if(_keyDown && vSpeed < jumpSpd){
+		if(keyDown && vSpeed < jumpSpd){
 			vSpeed = jumpSpd;
 		}
 		
@@ -136,7 +143,7 @@ switch(state){
 		if(mouse_check_button_released(mb_right) || point_distance(x,y,grapple_target_x,grapple_target_y) < global.grapple_speed * 2){
 			state = pState.normal;
 		}
-		if(_keyJump){
+		if(keyJump){
 			coyote_frames = 0;
 			grounded = false;
 			state = pState.normal;
@@ -222,7 +229,7 @@ if(bruh == noone){
 if(bruh != noone){
 	part_particles_create(global.partSystem,x,y,global.ptCheckpoint,1);
 	spawnx = bruh.x;
-	spawny = bruh.y-32-14;
+	spawny = bruh.y-32-15;
 }
 
 //gun cooldown vars
