@@ -8,6 +8,8 @@ if(global.grungo){
 	sprite_index = sGrungo;	
 }
 
+depth = -1;
+
 point_loss_frames = 2;
 point_loss_cur = 0;
 

@@ -9,4 +9,4 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 
 image_index = oPlayer.current_weapon;
 
-depth = -1;
+depth = -2;
