@@ -19,13 +19,21 @@ global.lv3_hs = 0;
 global.lv4_hs = 0;
 global.lv5_hs = 0;
 
+global.ex1_hs = 0;
+global.ex2_hs = 0;
+global.ex3_hs = 0;
+
+global.lich_freed = false;
+global.lich_defeated = false;
+
 global.upgrade_cost = 4500;
 
 global.available_cash = global.upgrade_cost*2;
 global.net_worth = global.upgrade_cost*2;
 
-global.cheating = false;
+global.cheating = true;
 global.grungo = false;
+global.epic_mode = false;
 
 
 window_set_size(global.game_width,global.game_height);

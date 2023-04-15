@@ -5,6 +5,14 @@ if(!collided){
 	collided = true;
 	audio_pause_all();
 	audio_play_sound(sndWin,0,0);
+	
+	if(global.epic_mode){
+		audio_sound_pitch(audio_play_sound(sndWin,0,0),0.75);
+		audio_sound_pitch(audio_play_sound(sndWin,0,0),0.5);
+		audio_sound_pitch(audio_play_sound(sndWin,0,0),1.25);
+		audio_sound_pitch(audio_play_sound(sndWin,0,0),1.5);
+	}
+	
 	oPlayer.state = pState.frozen;
 	oCamera.state = cState.frozen;
 	
@@ -36,6 +44,15 @@ if(!collided){
 				break;
 			case rmLevel5:
 				global.lv5_hs = oPlayer.redeemed_points;
+				break;
+			case rmExLevel1:
+				global.ex1_hs = oPlayer.redeemed_points;
+				break;
+			case rmExLevel2:
+				global.ex2_hs = oPlayer.redeemed_points;
+				break;
+			case rmExLevel3:
+				global.ex3_hs = oPlayer.redeemed_points;
 				break;
 		}
 		

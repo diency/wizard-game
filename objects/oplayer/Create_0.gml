@@ -8,6 +8,8 @@ if(global.grungo){
 	sprite_index = sGrungo;	
 }
 
+depth = -1;
+
 point_loss_frames = 2;
 point_loss_cur = 0;
 
@@ -25,6 +27,8 @@ jumpSpd = 6;
 grv = 0.2;
 hSpeedFraction = 0.0;
 vSpeedFraction = 0.0;
+
+dir = 0;
 
 spawnx = x;
 spawny = y;
@@ -67,4 +71,4 @@ redeemed_points = 0;
 point_pool = 0;
 current_combo = 0;
 combo_timer = 0;
-combo_timer_max = 4 * 60; //multiplied by room speed
+combo_timer_max = 5 * 60; //multiplied by room speed

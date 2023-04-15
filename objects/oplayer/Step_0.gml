@@ -14,20 +14,6 @@ if(coyote_frames > 0){
 }
 
 //get inputs
-/*
-if(alarm[0] <= 0){
-	var _keyLeft = keyboard_check(ord("A"));
-	var _keyRight = keyboard_check(ord("D"));
-	var _keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
-	var _keyDown = keyboard_check_pressed(ord("S"));
-}else{
-	var _keyLeft = 0;
-	var _keyRight = 0;
-	var _keyJump = 0;
-	var _keyDown = 0;
-}
-*/
-
 keyLeft = keyboard_check(ord("A"));
 keyRight = keyboard_check(ord("D"));
 keyJump = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_space);
@@ -69,7 +55,7 @@ switch(state){
 	
 		scr_use_weapon();
 	
-		var dir = keyRight - keyLeft;
+		dir = keyRight - keyLeft;
 		hSpeed += dir * walkAccel;
 		
 		var hFriction = hFrictionGround;
@@ -271,8 +257,14 @@ if(instance_exists(oCreature)){
 			}
 			point_loss_cur--;
 		}
-		if(!audio_is_playing(sndOutOfTime)){
-			audio_play_sound(sndOutOfTime,0,1);	
+		if(room == rmExLevel1 || room == rmExLevel2 || room == rmExLevel3){
+			if(!audio_is_playing(sndOutOfTimeExpert)){
+				audio_play_sound(sndOutOfTimeExpert,0,1);
+			}
+		}else{
+			if(!audio_is_playing(sndOutOfTime)){
+				audio_play_sound(sndOutOfTime,0,1);	
+			}
 		}
 	}
 }

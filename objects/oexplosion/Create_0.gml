@@ -1,12 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var scale = global.fire_aoe;
+scale = oPlayer.cur_fire_aoe;
 
 image_xscale = scale;
 image_yscale = scale;
 
-audio_play_sound(sndExplosion,0,0);
+if(!global.epic_mode){
+	audio_play_sound(sndExplosion,0,0);
+}else{
+	audio_play_sound(sAyoPizzaHere,0,0);	
+}
 
 alarm[0] = 30;
 

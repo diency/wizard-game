@@ -3,7 +3,7 @@
 
 if(ds_list_find_index(collided_array,other.id) == -1){
 	ds_list_add(collided_array,other.id)
-	other.hp -= global.lightning_dmg;
+	other.hp -= oPlayer.cur_lightning_dmg;
 	other.alarm[1] = 5;
 	audio_play_sound(sndTakeDmg,0,0);
 }

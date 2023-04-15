@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 part_bought = false;
-part_cost = 100000;
+part_cost = 75000;

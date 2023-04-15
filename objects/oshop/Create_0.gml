@@ -18,12 +18,18 @@ max_upgrade = 4;
 
 //the amount which purchasing an upgrade gives to each category
 //basically just formatted like this so its easy to change later if we fuck up balance :)
-upgrade_bubble_ammo = 30;
+upgrade_bubble_ammo = 15; //jam ver: 30
+
 upgrade_bubble_rof = -3;
-upgrade_lightning_ammo = 3;
+
+upgrade_lightning_ammo = 1; //jam ver: 3
+
 upgrade_lightning_dmg = 2;
+
 upgrade_fire_ammo = 2;
+
 upgrade_fire_aoe = 1;
+//upgrade_fire_dmg = 1; //not in jam ver, also not stored in tiers and such
 
 //the current tier of each upgrade
 tier_bubble_ammo = (global.bubble_ammo - 30) div upgrade_bubble_ammo;

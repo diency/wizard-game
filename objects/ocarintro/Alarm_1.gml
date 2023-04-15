@@ -25,7 +25,21 @@ with(oPlayer){
 		case rmLevel5:
 			current_song = audio_play_sound(sndLevel5,0,0);
 			break;
+		case rmExLevel1:
+			current_song = audio_play_sound(sndExLevel1,0,0);
+			break;
+		case rmExLevel2:
+			current_song = audio_play_sound(sndExLevel2,0,0);
+			break;
+		case rmExLevel3:
+			current_song = audio_play_sound(sndExLevel3,0,0);
+			break;
 	}
 	song_length = audio_sound_length(current_song);
 	song_started = true;
+}
+
+if(room == rmExLevel3){
+	instance_create_layer(0,0,"Instances",oLichBgDraw);
+	instance_create_layer(0,0,"Instances",oLichLevelText);
 }

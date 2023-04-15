@@ -7,7 +7,11 @@ if(collided){
 	var base_y = global.game_height/8;
 	
 	draw_set_halign(fa_center);
-	draw_text_transformed(base_x,base_y,"CLEAR!",4,4,0);
+	if(!global.epic_mode){
+		draw_text_transformed(base_x,base_y,"CLEAR!",4,4,0);
+	}else{
+		draw_text_transformed(base_x,base_y,"fuck",4,4,0);
+	}
 
 	if(draw_progress >= 1){
 		draw_text(base_x,base_y + 100,"your score: "+string(oPlayer.redeemed_points));

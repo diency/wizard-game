@@ -11,3 +11,8 @@ starting = false;
 
 audio_stop_sound(screech_snd);
 audio_play_sound(sndSlam,0,0);
+
+if(room == rmExLevel3){
+	instance_create_layer(x,y,"Instances",oLichLevel);
+	visible = false;
+}

@@ -38,7 +38,6 @@ if(in_menu){
 		if(current_selected != num_upgrades){ //do nothing if its the back button
 			if(tiers[| current_selected] > 0){ //dont sell if you have none
 				
-				//play coins noise
 				global.available_cash += upgrade_cost * tiers[| current_selected]
 				switch(current_selected){
 					case 0:

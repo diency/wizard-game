@@ -9,7 +9,11 @@ if(position_meeting(oPlayer.spawnx,oPlayer.spawny+32,id)){
 
 if(touching && !active){
 	active = true;
-	audio_play_sound(sndCheckpoint,0,0);
+	if(!global.epic_mode){
+		audio_play_sound(sndCheckpoint,0,0);
+	}else{
+		audio_play_sound(sndBadToTheBone,0,0);
+	}
 	image_index = 1;
 }
 

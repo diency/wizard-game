@@ -33,7 +33,11 @@ if(object_index == oEnemyMrW){
 bruh.sprite_index = sDefeated;
 }
 
-audio_play_sound(sGlassBreak,0,0);
+if(!global.epic_mode){
+	audio_play_sound(sGlassBreak,0,0);
+}else{
+	audio_sound_pitch(audio_play_sound(sndTiktokSnoring,0,0),random_range(0.8,2));	
+}
 
 repeat(worth/20){
 	instance_create_layer(x,y,"Instances",oCrystal);
