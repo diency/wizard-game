@@ -11,10 +11,14 @@ function scr_player_die(){
 		vSpeed = 0;
 		hSpeed = 0;
 	
-		audio_play_sound(sndPlayerDie,0,0);
+		if(!global.epic_mode){
+			audio_play_sound(sndPlayerDie,0,0);
+		}else{
+			audio_play_sound(sMetalPipe,0,0);
+		}
 	
-		//drop combo
-		combo_timer = 0;
+		//old - drop combo
+		//combo_timer = 0;
 		
 		//disable inputs for a couple frames
 		alarm[0] = 20;

@@ -30,6 +30,12 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !oVendingMachine.part_bought)
 			message1 = "i heard barry the bear is selling magic";
 			message2 = "items now... where'd he get those?";
 	}
+	
+	if(oPlayer.sprite_index == sGrungo){
+		message1 = "nice to meet you grungo! my name is beep.";
+		message2 = "im a robot travelling with my friend zap.";
+	}
+	
 	draw_text(x,y - 40,message1);
 	draw_text(x,y - 20,message2);
 }

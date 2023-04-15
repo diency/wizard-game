@@ -8,6 +8,11 @@ var go_to_y = mouse_y;
 var deltaX = go_to_x - x;
 var deltaY = go_to_y - y;
 
+//frames right after it spawns where it cant be killed by a wall3
+//mostly done like this so if youre backed up against a wall3 and shoot
+//it wont destroy it immediatley
+i_frames = 3;
+
 var hyp = sqrt((deltaX * deltaX) + (deltaY * deltaY));
 	
 if(oPlayer.state == pState.normal){

@@ -11,8 +11,10 @@ draw_set_valign(fa_top);
 if(current_combo > 0){
 	draw_text_transformed(global.game_width - 10,3,"x"+string(current_combo),4,4,0)	
 }
-draw_text(global.game_width - 10,3,"crystals: " + string(redeemed_points));
 
+if(room != rmHub){
+	draw_text(global.game_width - 10,3,"crystals: " + string(redeemed_points));
+}
 
 if(room != rmHub && room != rmTutorial){
 	if(song_started && audio_is_playing(current_song)){

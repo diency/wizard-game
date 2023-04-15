@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !in_menu && !oVendingMachine.part_bought){
+if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !in_menu && !oVendingMachine.part_bought && !global.grungo){
 	oPlayer.state = pState.noControls;
 	in_menu = true;
 	
@@ -42,8 +42,5 @@ if(point_distance(x,y,oPlayer.x,oPlayer.y) < 70 && !in_menu && !oVendingMachine.
 	bob.my_dad = id;
 	bob.text = "back";
 }else if(in_menu && current_selected == num_upgrades){
-	in_menu = false;
-	oPlayer.state = pState.normal;
-	instance_destroy(oButton);
-	instance_destroy(oBar);
+	scr_shop_close_menu()
 }

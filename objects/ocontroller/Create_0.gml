@@ -5,6 +5,8 @@
 global.partSystem = part_system_create();
 part_system_depth(global.partSystem,-100);
 
+draw_set_font(fnt_vinque);
+
 paused = false;
 
 action_time = false;
